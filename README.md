@@ -5,3 +5,6 @@ bidirecional, bomba de saída e eletroválvula de entrada. Projeto deenvolvido u
 durante diciplina 'Maquinas e acionametos'.
 
 ![image alt](https://github.com/AlvaroLHBremm/Processo-de-acionamento-e-automacao-via-CLP/blob/main/Projeto%20PLC.png?raw=true)
+
+<p align="center"> <img src="figs/PLC_bancada.png" alt="diagrama" width="100%"></p>
+
