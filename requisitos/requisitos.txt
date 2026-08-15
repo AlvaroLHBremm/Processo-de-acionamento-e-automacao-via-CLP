@@ -1,0 +1,127 @@
+DESENVOLVIMENTO E PROGRAMAÇÃO DE PROCESSO DE ACIONAMENTO E AUTOMAÇÃO - 10/07/2025 11:58
+PROCESSO DE ACIONAMENTO E AUTOMAÇÃO: Tanque para tratamento térmico com agitador bidirecional com bomba de saída e eletroválvula de entrada
+
+ 
+
+Sequência do Processo:
+
+ 
+
+1. Após energização: indicação de máquina parada (L1);
+
+2. Botão Liga (B1): inicia processo;
+
+3. Ativa eletroválvulas (EV) para abertura e sinaliza entrada dos líquidos (L2);
+
+4. Aguarda enchimento do tanque até sensor de nível alto (NA) atuar;
+
+5. Desativa eletroválvulas (EV) para fechamento;
+
+6. Liga elemento resistivo para aquecimento dos líquidos (AQ) e sinaliza aquecimento (L3);
+
+7. Termostato (TE) monitora temperatura ligando e desligando o aquecedor sempre que necessário (controle por histerese) e sinaliza aquecimento (L4);
+
+8. Após atingir a temperatura liga o agitador bidirecional trifásico. A agitação deve ter 3 tempos iguais (sentido 1 - pausa - sentido 2) e sinaliza sentidos de rotação (L5 e L6);
+
+9. Temporiza processo total de agitação e desliga agitador, aquecimento e suas sinalizações;
+
+10. Liga a bomba de saída (BS) do líquido e sinaliza (L7);
+
+11. Sensor de nível baixo (NB) desliga bomba e finaliza processo religando sinalização de máquina parada (L1);
+
+12. Botão Emergência (B2).
+
+ 
+
+ 
+
+Opcionais para melhor avaliação
+
+a) Botão de Pausa: deve parar o processo a qualquer tempo e retomar de onde parou - sinalizar condição
+
+b) Botão de Reset: deve parar o processo a qualquer tempo e preparar a máquina para novo processo - sinalizar condição
+
+c) Desejável: intertravamentos e adicionais de segurança;
+
+d) Desejável: melhorias no processo básico, com outras operações.
+
+ 
+
+ 
+
+* Programar Controlador Lógico Programável (CLP) em linguagem de simbologia LADDER;
+
+* Simular o processo em simulador de CLP;
+
+* Desenvolver e simular o circuito de potência da máquina em simulador CADeSIMU;
+
+* Desenvolver e simular o circuito de comando com o CLP em simulador CADeSIMU.
+
+ 
+
+AVALIAÇÃO: APRESENTAR E EXPLICAR A PROGRAMAÇÃO DO PROCESSO EM SIMULADOR DE CLP
+
+i. Apresentar a operação do processo em simulador CLP;
+
+ii. Apresentar a operação dos circuitos de potência e comando do CLP em simulador;
+
+iii. Explicar a programação Ladder do processo;
+
+iv. Analisar com o professor diversas situações operacionais, para verificar bom funcionamento e segurança no processo.
+
+ 
+
+Endereçamentos obrigatórios:
+
+ 
+
+Entradas:
+
+I1: Botão Liga (B1);
+
+I2: Botão Emergência (B2);
+
+I3: Sensor Nível Alto (NA);
+
+I4: Termostato (TE);
+
+I5: Sensor Nível Baixo (NB).
+
+ 
+
+Saídas:
+
+Q1: Eletroválvula (EV);
+
+Q2: Aquecimento (AQ);
+
+Q3: Agitador Sentido 1 (S1);
+
+Q4: Agitador Sentido 2 (S2);
+
+Q5: Bomba de saída (BS)
+
+Q6 a Q8: sinalizações e/ou outras funções.
+
+ 
+
+Circuito de Potência básico:
+
+Eletroválvula (EV) monofásica - acionada por contator monofásico;
+Elemento Resistivo de Aquecimento (AQ) trifásico - acionado por contator trifásico;
+Agitador com motor de indução trifásico (MT) - acionado por contato trifásico;
+Bomba de Saída (BS) monofásica - acionada por contator monofásico.
+ 
+
+Circuito de Comando básico:
+
+ 
+
+Botão Pulsador Verde Liga (B1);
+Botão Emergência Vermelho Desliga (B2) - pulsador ou trava;
+Sensor Nível Alto (NA) binário (liga/desliga);
+Termostato (TE) binário (liga/desliga);
+Sensor Nível Baixo (NB) binário (liga/desliga);
+Sinalizadores Luminosos.
+
+Cadastrado por: FERNANDO LUIZ ROSA MUSSOI
