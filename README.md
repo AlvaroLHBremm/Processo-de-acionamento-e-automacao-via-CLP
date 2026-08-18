@@ -5,12 +5,13 @@ bidirecional, bomba de saída e eletroválvula de entrada. Projeto deenvolvido u
 durante diciplina `Maquinas e acionametos` e aplicado em prática em bancada na disciplina de `Automação Industrial` utilizando o CLP `WEG Clic-02/20VR-D`.
 
 <p align="center"> <img src="figs/Projeto_PLC.png" alt="diagrama" width="100%"></p>
-<p align="center"><b>Website</b></p>
+<p align="center"><b>Progamação Ladder e simulação dos motores</b></p>
 
 ![image alt](https://github.com/AlvaroLHBremm/Processo-de-acionamento-e-automacao-via-CLP/blob/main/Projeto%20PLC.png?raw=true)
 
 
-Para simular a ativação dos componentes, os quais não estava disponiveis, foram utilizados lEDs como saida. 
+foram utilizados lEDs como saida analogica para simular a ativação dos componentes. 
 
 <p align="center"> <img src="figs/PLC_bancada.png" alt="diagrama" width="100%"></p>
+<p align="center"><b>Prática em bancada com CLP</b></p>
 
