@@ -7,7 +7,7 @@ durante diciplina `Maquinas e acionametos` e aplicado em prática em bancada na 
 <p align="center"> <img src="figs/Projeto_PLC.png" alt="diagrama" width="100%"></p>
 <p align="center"><b>Progamação Ladder e simulação dos motores</b></p>
 
-
+##
 foram utilizados lEDs como saida analogica para simular a ativação dos componentes, como mostra na seção de `sinalizações` na imagem acima.
 
 
